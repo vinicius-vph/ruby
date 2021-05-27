@@ -1,0 +1,36 @@
+<h1>CookBook</h1>
+<h3>Crie uma nova receita</h3><br>
+<%= form_for Recipe.new do |form| %>
+  <div>
+    <%= form.label :title, 'Título' %><br>
+    <%= form.text_field :title %>
+  </div><br>
+  <div>
+    <%= form.label :recipe_type, 'Tipo da Receita' %><br>
+    <%= form.text_field :recipe_type %>
+  </div><br>
+
+  <div>
+    <%= form.label :cuisine, 'Cozinha' %><br>
+    <%= form.text_field :cuisine %>
+  </div><br>
+  <div>
+    <%= form.label :difficulty, 'Dificuldade' %><br>
+    <%= form.text_field :difficulty %>
+  </div><br>
+  <div>
+    <%= form.label :cook_time, 'Tempo de Preparo' %><br>
+    <%= form.text_field :cook_time %>
+  </div><br>
+  <div>
+    <%= form.label :ingredients, 'Ingredientes' %><br>
+    <%= form.text_area :ingredients %>
+  </div><br>
+  <div>
+    <%= form.label :cook_method, 'Como Preparar' %><br>
+    <%= form.text_area :cook_method %>
+  </div><br>
+  <div>
+    <%= form.submit 'Enviar' %>
+  </div>
+<% end %>

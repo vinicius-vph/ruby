@@ -1,0 +1,82 @@
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveCuisineFromRecipes (20210428164343)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "arecipes" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "recipe_type" varchar DEFAULT NULL, "cuisine" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "cook_time" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "ingredients" text DEFAULT NULL, "cook_method" text DEFAULT NULL, "featured" boolean DEFAULT 0, "recipe_type_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_arecipes_on_recipe_type_id" ON "arecipes" ("recipe_type_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "arecipes" ("id","title","recipe_type","cuisine","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id")
+                     SELECT "id","title","recipe_type","cuisine","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id" FROM "recipes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "recipes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "recipe_type" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "cook_time" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "ingredients" text DEFAULT NULL, "cook_method" text DEFAULT NULL, "featured" boolean DEFAULT 0, "recipe_type_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_recipes_on_recipe_type_id" ON "recipes" ("recipe_type_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("id","title","recipe_type","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id")
+                     SELECT "id","title","recipe_type","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id" FROM "arecipes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "arecipes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210428164343"]]
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCuisines (20210428165443)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "cuisines" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210428165443"]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddCuisineToRecipes (20210428170150)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "arecipes" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "recipe_type" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "cook_time" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "ingredients" text DEFAULT NULL, "cook_method" text DEFAULT NULL, "featured" boolean DEFAULT 0, "recipe_type_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_arecipes_on_recipe_type_id" ON "arecipes" ("recipe_type_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "arecipes" ("id","title","recipe_type","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id")
+                     SELECT "id","title","recipe_type","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id" FROM "recipes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "recipes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "recipe_type" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "cook_time" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "ingredients" text DEFAULT NULL, "cook_method" text DEFAULT NULL, "featured" boolean DEFAULT 0, "recipe_type_id" integer DEFAULT NULL, "cuisine_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_recipes_on_recipe_type_id" ON "recipes" ("recipe_type_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("id","title","recipe_type","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id")
+                     SELECT "id","title","recipe_type","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id" FROM "arecipes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "arecipes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_recipes_on_cuisine_id" ON "recipes" ("cuisine_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "arecipes" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "recipe_type" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "cook_time" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "ingredients" text DEFAULT NULL, "cook_method" text DEFAULT NULL, "featured" boolean DEFAULT 0, "recipe_type_id" integer DEFAULT NULL, "cuisine_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_arecipes_on_cuisine_id" ON "arecipes" ("cuisine_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_arecipes_on_recipe_type_id" ON "arecipes" ("recipe_type_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "arecipes" ("id","title","recipe_type","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id","cuisine_id")
+                     SELECT "id","title","recipe_type","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id","cuisine_id" FROM "recipes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "recipes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "recipe_type" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "cook_time" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "ingredients" text DEFAULT NULL, "cook_method" text DEFAULT NULL, "featured" boolean DEFAULT 0, "recipe_type_id" integer DEFAULT NULL, "cuisine_id" integer NOT NULL, CONSTRAINT "fk_rails_be504d0fa1"
+FOREIGN KEY ("cuisine_id")
+  REFERENCES "cuisines" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_recipes_on_recipe_type_id" ON "recipes" ("recipe_type_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_recipes_on_cuisine_id" ON "recipes" ("cuisine_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("id","title","recipe_type","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id","cuisine_id")
+                     SELECT "id","title","recipe_type","difficulty","cook_time","created_at","updated_at","ingredients","cook_method","featured","recipe_type_id","cuisine_id" FROM "arecipes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "arecipes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210428170150"]]
+  [1m[35m (14.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

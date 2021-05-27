@@ -1,0 +1,226 @@
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRecipes (20210422180957)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "recipe_type" varchar, "cuisine" varchar, "difficulty" varchar, "cook_time" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210422180957"]]
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-04-22 15:26:22 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 234)
+Completed 200 OK in 251ms (Views: 243.1ms | ActiveRecord: 0.0ms | Allocations: 310144)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:34:44 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 12461)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:34:45 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 11172)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:40:09 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 11166)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:48:38 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1467)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.6ms | Allocations: 13484)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:48:39 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 595)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.4ms | Allocations: 11759)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:48:44 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 601)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.1ms | Allocations: 11752)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:48:45 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 606)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.1ms | Allocations: 11764)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:50:10 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1520)
+Completed 200 OK in 196ms (Views: 188.5ms | ActiveRecord: 0.7ms | Allocations: 290675)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:51:23 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1411)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.5ms | Allocations: 14282)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:51:24 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 602)
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.3ms | Allocations: 11768)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:51:24 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 595)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.1ms | Allocations: 11746)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:51:24 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 595)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.2ms | Allocations: 11748)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:56:56 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1409)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.5ms | Allocations: 14295)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:56:57 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 595)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.3ms | Allocations: 11770)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:56:58 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 595)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.2ms | Allocations: 11748)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:56:59 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 595)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.1ms | Allocations: 11748)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:56:59 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 599)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.2ms | Allocations: 11752)
+
+
+Started GET "/" for ::1 at 2021-04-22 15:57:00 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 602)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.2ms | Allocations: 11775)
+
+
+Started GET "/" for ::1 at 2021-04-22 16:00:04 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 595)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.8ms | Allocations: 11748)
+
+
+Started GET "/" for ::1 at 2021-04-22 16:00:04 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 595)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.2ms | Allocations: 11752)
+
+
+Started GET "/" for ::1 at 2021-04-22 16:00:05 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 595)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.1ms | Allocations: 11781)
+
+
+Started GET "/" for ::1 at 2021-04-22 16:00:05 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 599)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms | Allocations: 11757)
+
+
+Started GET "/" for ::1 at 2021-04-22 16:00:05 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 595)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.1ms | Allocations: 11801)
+
+

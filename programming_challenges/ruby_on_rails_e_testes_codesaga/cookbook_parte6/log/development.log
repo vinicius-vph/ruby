@@ -1,0 +1,775 @@
+Started GET "/" for ::1 at 2021-04-24 15:41:48 -0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1870)
+Completed 200 OK in 382ms (Views: 352.2ms | ActiveRecord: 0.5ms | Allocations: 306936)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-24 15:41:50 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 31.9ms | Allocations: 3921)
+Completed 200 OK in 121ms (Views: 71.8ms | ActiveRecord: 0.8ms | Allocations: 20740)
+
+
+Started GET "/" for ::1 at 2021-04-24 15:56:36 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1136)
+Completed 200 OK in 45ms (Views: 39.6ms | ActiveRecord: 0.2ms | Allocations: 13499)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-24 15:56:38 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 899)
+Completed 200 OK in 75ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 16981)
+
+
+Started POST "/recipes" for ::1 at 2021-04-24 15:56:47 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7zlHxuAqxn1leSG+O627HeQphyitxPrdl5voQ0Vqkuw53SkI/cexepLGjgN4DeAYjG56ADnwJLI3rGr6Mis5Hg==", "recipe"=>{"title"=>"", "recipe_type"=>"sad", "cuisine"=>"sda", "difficulty"=>"asd", "cook_time"=>"30", "ingredients"=>"saddsadsa", "cook_method"=>"saddasdas"}, "commit"=>"Enviar"}
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms | Allocations: 2871)
+
+
+Started GET "/recipes" for ::1 at 2021-04-24 15:56:47 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (3.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 630)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 3.3ms | Allocations: 11794)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-24 15:57:11 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 778)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 11941)
+
+
+Started POST "/recipes" for ::1 at 2021-04-24 15:57:20 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sXeS0g5QUvs4Kgp6aw9ML7zXNuDFS4B5Ej/7CoSk9wpnk/wcE70l/M+Vpccorxcq1JDLyFF/XhayCHmz8+Vc+A==", "recipe"=>{"title"=>"asdad", "recipe_type"=>"sa", "cuisine"=>"", "difficulty"=>"asdas", "cook_time"=>"30", "ingredients"=>"saddsa", "cook_method"=>"sadasda"}, "commit"=>"Enviar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:15:in `create'
+  [1m[36mRecipe Create (0.5ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "asdad"], ["recipe_type", "sa"], ["cuisine", ""], ["difficulty", "asdas"], ["cook_time", 30], ["created_at", "2021-04-24 18:57:20.314062"], ["updated_at", "2021-04-24 18:57:20.314062"], ["ingredients", "saddsa"], ["cook_method", "sadasda"]]
+  ↳ app/controllers/recipes_controller.rb:15:in `create'
+  [1m[35m (20.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:15:in `create'
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 39ms (ActiveRecord: 20.8ms | Allocations: 4143)
+
+
+Started GET "/recipes/1" for ::1 at 2021-04-24 15:57:20 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 314)
+Completed 200 OK in 39ms (Views: 27.0ms | ActiveRecord: 0.2ms | Allocations: 14514)
+
+
+Started GET "/" for ::1 at 2021-04-24 15:57:23 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 698)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.3ms | Allocations: 11857)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-24 15:57:27 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 778)
+Completed 200 OK in 58ms (Views: 56.5ms | ActiveRecord: 0.0ms | Allocations: 11941)
+
+
+Started POST "/recipes" for ::1 at 2021-04-24 15:57:34 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W2J98GJYVUiBWN0hVKl6zd3kGVYwpb3eBvcASa1TRzuNhhM+f7UiT3bncpwXCSHItaPkfqSRY7GmwILw2hLsyQ==", "recipe"=>{"title"=>"", "recipe_type"=>"sadsa", "cuisine"=>"asd", "difficulty"=>"asdas", "cook_time"=>"30", "ingredients"=>"asddsadsa", "cook_method"=>"sadsa"}, "commit"=>"Enviar"}
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms | Allocations: 1294)
+
+
+Started GET "/recipes" for ::1 at 2021-04-24 15:57:34 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 697)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.2ms | Allocations: 11859)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-24 15:59:54 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 14.9ms | Allocations: 929)
+Completed 200 OK in 93ms (Views: 42.1ms | ActiveRecord: 0.6ms | Allocations: 19050)
+
+
+Started POST "/recipes" for ::1 at 2021-04-24 16:00:01 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tNw6+X4bCTxZ9MZk5fJQaSCNlpW5zz2hgefPE3FQNmNiOFQ3Y/Z+O65LadmmUgtsSMprvS37484h0E2qBhGdkQ==", "recipe"=>{"title"=>"", "recipe_type"=>"dfhfg", "cuisine"=>"fghgf", "difficulty"=>"fghfg", "cook_time"=>"30", "ingredients"=>"fghfg", "cook_method"=>"fghfghfg"}, "commit"=>"Enviar"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 3766)
+
+
+  
+NoMethodError (undefined method `erros' for #<Recipe id: nil, title: "", recipe_type: "dfhfg", cuisine: "fghgf", difficulty: "fghfg", cook_time: 30, created_at: nil, updated_at: nil, ingredients: "fghfg", cook_method: "fghfghfg">
+Did you mean?  errors):
+  
+app/controllers/recipes_controller.rb:16:in `create'
+Started POST "/recipes" for ::1 at 2021-04-24 16:00:45 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"219XpAc/iJqpQklyXmLR200wVizuz6L13Cqf7Q2LTYJhCcO+NWmCauB2VzHr0a6WgDn9r6tSxvoOXo05KZVIGg==", "recipe"=>{"title"=>"", "recipe_type"=>"dfhfg", "cuisine"=>"fghgf", "difficulty"=>"fghfg", "cook_time"=>"30", "ingredients"=>"fghfg", "cook_method"=>"fghfghfg"}, "commit"=>"Enviar"}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.2ms | Allocations: 10248)
+
+
+  
+NoMethodError (undefined method `erros' for #<Recipe id: nil, title: "", recipe_type: "dfhfg", cuisine: "fghgf", difficulty: "fghfg", cook_time: 30, created_at: nil, updated_at: nil, ingredients: "fghfg", cook_method: "fghfghfg">
+Did you mean?  errors):
+  
+app/controllers/recipes_controller.rb:16:in `create'
+Started GET "/recipes" for ::1 at 2021-04-24 16:00:51 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 832)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.4ms | Allocations: 12386)
+
+
+Started GET "/recipes" for ::1 at 2021-04-24 16:00:53 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 688)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.2ms | Allocations: 11838)
+
+
+Started GET "/recipes" for ::1 at 2021-04-24 16:00:53 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 688)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.2ms | Allocations: 11838)
+
+
+Started GET "/recipes" for ::1 at 2021-04-24 16:00:56 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 688)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.2ms | Allocations: 11846)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-24 16:00:58 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 828)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.0ms | Allocations: 11985)
+
+
+Started POST "/recipes" for ::1 at 2021-04-24 16:01:11 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/mJt+fQG4yKbcrfw27h0X4owZPfjNpuGJemi9QqcO+oohgM36euUJWzNGE2YGC9a4neZ33cCRemF3iBMfd2QGA==", "recipe"=>{"title"=>"", "recipe_type"=>"KJHK", "cuisine"=>"Brasileira", "difficulty"=>"JKJHKHJ", "cook_time"=>"30", "ingredients"=>"JHKHJKJHK", "cook_method"=>"HJKJHKJHK"}, "commit"=>"Enviar"}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 3574)
+
+
+  
+NoMethodError (undefined method `erros' for #<Recipe id: nil, title: "", recipe_type: "KJHK", cuisine: "Brasileira", difficulty: "JKJHKHJ", cook_time: 30, created_at: nil, updated_at: nil, ingredients: "JHKHJKJHK", cook_method: "HJKJHKJHK">
+Did you mean?  errors):
+  
+app/controllers/recipes_controller.rb:16:in `create'
+Started POST "/recipes" for ::1 at 2021-04-24 16:01:49 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/mJt+fQG4yKbcrfw27h0X4owZPfjNpuGJemi9QqcO+oohgM36euUJWzNGE2YGC9a4neZ33cCRemF3iBMfd2QGA==", "recipe"=>{"title"=>"", "recipe_type"=>"KJHK", "cuisine"=>"Brasileira", "difficulty"=>"JKJHKHJ", "cook_time"=>"30", "ingredients"=>"JHKHJKJHK", "cook_method"=>"HJKJHKJHK"}, "commit"=>"Enviar"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 3570)
+
+
+  
+NoMethodError (undefined method `erros' for #<Recipe id: nil, title: "", recipe_type: "KJHK", cuisine: "Brasileira", difficulty: "JKJHKHJ", cook_time: 30, created_at: nil, updated_at: nil, ingredients: "JHKHJKJHK", cook_method: "HJKJHKJHK">
+Did you mean?  errors):
+  
+app/controllers/recipes_controller.rb:16:in `create'
+Started GET "/" for ::1 at 2021-04-24 16:02:29 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 23.8ms | Allocations: 6656)
+Completed 200 OK in 47ms (Views: 41.6ms | ActiveRecord: 1.1ms | Allocations: 18988)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-24 16:02:44 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3271)
+Completed 200 OK in 221ms (Views: 198.8ms | ActiveRecord: 0.8ms | Allocations: 298352)
+
+
+Started POST "/recipes" for ::1 at 2021-04-24 16:02:58 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+UCX/ya4A0wb3XbwQfpflQqDM8+bNyqL5o4mY1JXwJgvpPkxO1V0S+xi2U0CWgSQYsTO5w8D9ORGuaTaJRZrag==", "recipe"=>{"title"=>"", "recipe_type"=>"Prato Principal", "cuisine"=>"Brasileira", "difficulty"=>"fgdfgdfg", "cook_time"=>"45", "ingredients"=>"cdsfhdf", "cook_method"=>"dfgdfgdfgdf"}, "commit"=>"Enviar"}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 5068)
+
+
+  
+NoMethodError (undefined method `erros' for #<Recipe id: nil, title: "", recipe_type: "Prato Principal", cuisine: "Brasileira", difficulty: "fgdfgdfg", cook_time: 45, created_at: nil, updated_at: nil, ingredients: "cdsfhdf", cook_method: "dfgdfgdfgdf">
+Did you mean?  errors):
+  
+app/controllers/recipes_controller.rb:16:in `create'
+Started POST "/recipes" for ::1 at 2021-04-24 16:03:20 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+UCX/ya4A0wb3XbwQfpflQqDM8+bNyqL5o4mY1JXwJgvpPkxO1V0S+xi2U0CWgSQYsTO5w8D9ORGuaTaJRZrag==", "recipe"=>{"title"=>"", "recipe_type"=>"Prato Principal", "cuisine"=>"Brasileira", "difficulty"=>"fgdfgdfg", "cook_time"=>"45", "ingredients"=>"cdsfhdf", "cook_method"=>"dfgdfgdfgdf"}, "commit"=>"Enviar"}
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 19ms (ActiveRecord: 1.0ms | Allocations: 8188)
+
+
+Started GET "/recipes" for ::1 at 2021-04-24 16:03:20 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1234)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.2ms | Allocations: 12948)
+
+
+Started GET "/recipes" for ::1 at 2021-04-24 16:03:51 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 6599)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 1.5ms | Allocations: 18932)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-24 16:03:52 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 829)
+Completed 200 OK in 47ms (Views: 45.5ms | ActiveRecord: 0.0ms | Allocations: 12001)
+
+
+Started POST "/recipes" for ::1 at 2021-04-24 16:04:02 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G6Nn7FwrQfBottsRC2+KQIcHOgksfMyYGlvkiq+f89fNRwkiQcY2958JdKxIz9FF70DHIbhIEve6bGYz2N5YJQ==", "recipe"=>{"title"=>"", "recipe_type"=>"zxdxczxcxz", "cuisine"=>"zxcczxczxc", "difficulty"=>"zxczxczxc", "cook_time"=>"30", "ingredients"=>"zxczxczxc", "cook_method"=>"zxczxczxczx"}, "commit"=>"Enviar"}
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 1502)
+
+
+Started GET "/recipes" for ::1 at 2021-04-24 16:04:02 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 697)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.1ms | Allocations: 11851)
+
+
+Started GET "/recipes" for ::1 at 2021-04-24 16:06:26 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 20.5ms | Allocations: 7356)
+Completed 200 OK in 230ms (Views: 222.7ms | ActiveRecord: 0.9ms | Allocations: 296513)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-24 16:06:28 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 17.6ms | Allocations: 2892)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 14233)
+
+
+Started POST "/recipes" for ::1 at 2021-04-24 16:06:37 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wXRKsK5QMHx9y73KEIoQQcfIxtJm6It1IMgkhmdBKH0XkCR+s71He4p0EndTKktEr487+vLcVRqA/6Y/EACDjw==", "recipe"=>{"title"=>"", "recipe_type"=>"Prato Principal", "cuisine"=>"Brasileira", "difficulty"=>"sdfsdfsdf", "cook_time"=>"30", "ingredients"=>"sadfafs", "cook_method"=>"sdfsdfsdfsd"}, "commit"=>"Enviar"}
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms | Allocations: 3070)
+
+
+Started GET "/recipes" for ::1 at 2021-04-24 16:06:37 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 697)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.2ms | Allocations: 11855)
+
+
+Started GET "/" for ::1 at 2021-04-27 13:46:04 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 7356)
+Completed 200 OK in 249ms (Views: 239.3ms | ActiveRecord: 1.2ms | Allocations: 296365)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-27 13:46:06 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 15.7ms | Allocations: 2928)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms | Allocations: 14299)
+
+
+Started POST "/recipes" for ::1 at 2021-04-27 13:46:09 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7mUev7UHnU/RXYNvkUPsewtd6DHDpw139xlGY/Q5oBf89aVam08VdrEKluyyYVAvRl3OIQl9adAhRhQL/GSsAQ==", "recipe"=>{"title"=>"", "recipe_type"=>"", "cuisine"=>"", "difficulty"=>"", "cook_time"=>"", "ingredients"=>"", "cook_method"=>""}, "commit"=>"Enviar"}
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 2774)
+
+
+Started GET "/recipes" for ::1 at 2021-04-27 13:46:09 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 744)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.3ms | Allocations: 11893)
+
+
+Started GET "/recipes" for ::1 at 2021-04-27 13:46:24 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 905)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.3ms | Allocations: 12939)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-27 13:46:25 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 13.7ms | Allocations: 1189)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.0ms | Allocations: 12493)
+
+
+Started POST "/recipes" for ::1 at 2021-04-27 13:46:27 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NY9KjnabS8UTYyQsI98oqPdGPHZf7MZi1IWvAF/j6VwnH/FrWNPD/HM0Ma8A/ZT8ukYaZpU2osUC2v1oV77lSg==", "recipe"=>{"title"=>"", "recipe_type"=>"", "cuisine"=>"", "difficulty"=>"", "cook_time"=>"", "ingredients"=>"", "cook_method"=>""}, "commit"=>"Enviar"}
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 1293)
+
+
+Started GET "/recipes" for ::1 at 2021-04-27 13:46:27 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 690)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.1ms | Allocations: 11869)
+
+
+Started GET "/recipes" for ::1 at 2021-04-27 14:06:34 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 21.9ms | Allocations: 6413)
+Completed 200 OK in 47ms (Views: 42.9ms | ActiveRecord: 0.2ms | Allocations: 19689)
+
+
+Started GET "/recipes" for ::1 at 2021-04-27 14:10:25 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 907)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.2ms | Allocations: 12913)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-27 14:10:26 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1202)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.0ms | Allocations: 12511)
+
+
+Started POST "/recipes" for ::1 at 2021-04-27 14:10:33 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bkYCh9tAmhRbjLKMEykuy7+UtKlRD59bJgCTnvg4PAZ81rli9QgSLTvbpw8wC5Kf8pSSuZvV+/zwX8H28GUwEA==", "recipe"=>{"title"=>"", "recipe_type"=>"", "cuisine"=>"", "difficulty"=>"", "cook_time"=>"", "ingredients"=>"", "cook_method"=>""}, "commit"=>"Enviar"}
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms | Allocations: 3415)
+
+
+Started GET "/recipes" for ::1 at 2021-04-27 14:10:33 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 696)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.1ms | Allocations: 11845)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-27 14:11:10 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 786)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 11957)
+
+
+Started POST "/recipes" for ::1 at 2021-04-27 14:14:00 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7r6sBqGh4Fgyf5H444bhiLq2buHEAn8Lp2RJKt62kdf8Lhfjj+loYVIohHvApF3c97ZI8Q7YG6xxOxtC1uudwQ==", "recipe"=>{"title"=>"", "recipe_type"=>"", "cuisine"=>"", "difficulty"=>"", "cook_time"=>"", "ingredients"=>"", "cook_method"=>""}, "commit"=>"Enviar"}
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms | Allocations: 2958)
+
+
+Started GET "/recipes" for ::1 at 2021-04-27 14:14:00 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 690)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.2ms | Allocations: 11849)
+
+
+Started GET "/recipes/1" for ::1 at 2021-04-27 14:14:02 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 299)
+Completed 200 OK in 59ms (Views: 29.8ms | ActiveRecord: 0.2ms | Allocations: 14542)
+
+
+Started GET "/recipes/1/edit" for ::1 at 2021-04-27 14:14:05 -0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:20:in `edit'
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1197)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.2ms | Allocations: 13012)
+
+
+Started PATCH "/recipes/1" for ::1 at 2021-04-27 14:14:10 -0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uk5IVA0Chd3l2rSmprnNVTIALsSpMsL1fFQQh4R15MsYVPDk48LppvhCP9Pn4BId3wborjxMRpqCfaiKOgoCKQ==", "recipe"=>{"title"=>"", "recipe_type"=>"sa", "cuisine"=>"", "difficulty"=>"asdas", "cook_time"=>"30", "ingredients"=>"saddsa", "cook_method"=>"sadasda"}, "commit"=>"Enviar", "id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `update'
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms | Allocations: 2451)
+
+
+Started GET "/recipes/1" for ::1 at 2021-04-27 14:14:10 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 81)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.2ms | Allocations: 11765)
+
+
+Started GET "/recipes/1/edit" for ::1 at 2021-04-27 14:14:29 -0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:20:in `edit'
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1273)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.2ms | Allocations: 13794)
+
+
+Started PATCH "/recipes/1" for ::1 at 2021-04-27 14:14:33 -0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zy97CmtkKPZGIzWjvGLPfSey49Rm1ABrYcJ7N4JEAwQtNcO6haREjVu7vtb9OxA1yrQlvvOqhASf68M6PDvl5g==", "recipe"=>{"title"=>"", "recipe_type"=>"sa", "cuisine"=>"", "difficulty"=>"asdas", "cook_time"=>"30", "ingredients"=>"saddsa", "cook_method"=>"sadasda"}, "commit"=>"Enviar", "id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `update'
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms | Allocations: 2413)
+
+
+Started GET "/recipes/1" for ::1 at 2021-04-27 14:14:33 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 289)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.1ms | Allocations: 12106)
+
+
+Started GET "/recipes/1/edit" for ::1 at 2021-04-27 14:14:57 -0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:20:in `edit'
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1273)
+Completed 200 OK in 41ms (Views: 37.6ms | ActiveRecord: 0.2ms | Allocations: 13794)
+
+
+Started PATCH "/recipes/1" for ::1 at 2021-04-27 14:15:01 -0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RmmQqBZuoU3IJkOE4UOnajU3WuyBvaKu4GoQuNE1cSgMcygY+K7NNtW+yPGgGngi2DGchhTDJsEeQ6i1b0qXyg==", "recipe"=>{"title"=>"", "recipe_type"=>"sa", "cuisine"=>"", "difficulty"=>"asdas", "cook_time"=>"30", "ingredients"=>"saddsa", "cook_method"=>"sadasda"}, "commit"=>"Enviar", "id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `update'
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms | Allocations: 2411)
+
+
+Started GET "/recipes/1" for ::1 at 2021-04-27 14:15:01 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 318)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.1ms | Allocations: 12135)
+
+
+Started GET "/recipes/1/edit" for ::1 at 2021-04-27 14:15:37 -0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:20:in `edit'
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1273)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.2ms | Allocations: 13808)
+
+
+Started PATCH "/recipes/1" for ::1 at 2021-04-27 14:15:41 -0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jBvfDGX3sKXBmKIru4RjVMkmJExJnDRc/vY/+NcJlWzGAWe8izfc3twAKV763bwcJCDiJtzisDMA34f1aXZzjg==", "recipe"=>{"title"=>"", "recipe_type"=>"sa", "cuisine"=>"", "difficulty"=>"asdas", "cook_time"=>"30", "ingredients"=>"saddsa", "cook_method"=>"sadasda"}, "commit"=>"Enviar", "id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `update'
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 16ms (ActiveRecord: 0.2ms | Allocations: 2407)
+
+
+Started GET "/recipes/1" for ::1 at 2021-04-27 14:15:41 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 434)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.1ms | Allocations: 12277)
+
+
+Started GET "/recipes/1/edit" for ::1 at 2021-04-27 14:16:14 -0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:20:in `edit'
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1278)
+Completed 200 OK in 52ms (Views: 48.8ms | ActiveRecord: 0.1ms | Allocations: 13853)
+
+
+Started PATCH "/recipes/1" for ::1 at 2021-04-27 14:16:18 -0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"URvBj+PCTTqYcNACoXeOCwWBChoSjOt5XOD5v8FJ+/obAXk/DQIhQYXoW3fgLlFD6IfMcIfybxaiyUGyfzYdGA==", "recipe"=>{"title"=>"", "recipe_type"=>"sa", "cuisine"=>"", "difficulty"=>"asdas", "cook_time"=>"30", "ingredients"=>"saddsa", "cook_method"=>"sadasda"}, "commit"=>"Enviar", "id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `update'
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 13ms (ActiveRecord: 0.2ms | Allocations: 2416)
+
+
+Started GET "/recipes/1" for ::1 at 2021-04-27 14:16:18 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 319)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 0.2ms | Allocations: 12137)
+
+
+Started GET "/recipes/1/edit" for ::1 at 2021-04-27 14:16:21 -0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:20:in `edit'
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 858)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.2ms | Allocations: 12544)
+
+
+Started GET "/recipes/1/edit" for ::1 at 2021-04-27 14:24:24 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:20:in `edit'
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1347)
+Completed 200 OK in 43ms (Views: 19.9ms | ActiveRecord: 0.2ms | Allocations: 20644)
+
+
+Started GET "/" for ::1 at 2021-04-27 14:24:28 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 936)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.4ms | Allocations: 12274)
+
+
+Started GET "/" for ::1 at 2021-04-27 14:24:30 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 688)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.2ms | Allocations: 11871)
+
+
+Started GET "/recipes/1" for ::1 at 2021-04-27 14:24:31 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 296)
+Completed 200 OK in 44ms (Views: 39.8ms | ActiveRecord: 0.2ms | Allocations: 12113)
+
+
+Started GET "/" for ::1 at 2021-04-27 14:24:35 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 688)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.2ms | Allocations: 11841)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-27 14:24:36 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1187)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms | Allocations: 12490)
+
+
+Started POST "/recipes" for ::1 at 2021-04-27 14:24:38 -0300
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rLW7VDGzGldGbEfKCe3t74hAZ11QzJYut+iSxV55AfK+JQCxH/uSbiY7Ukkqz1G7xUBBTZoW8olht8CtViQN5A==", "recipe"=>{"title"=>"", "recipe_type"=>"", "cuisine"=>"", "difficulty"=>"", "cook_time"=>"", "ingredients"=>"", "cook_method"=>""}, "commit"=>"Enviar"}
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms | Allocations: 3169)
+
+
+Started GET "/recipes" for ::1 at 2021-04-27 14:24:38 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 690)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.1ms | Allocations: 11841)
+
+
+Started GET "/recipes/new" for ::1 at 2021-04-27 14:24:57 -0300
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 779)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.0ms | Allocations: 11946)
+
+
+Started POST "/recipes" for ::1 at 2021-04-27 14:25:58 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WZcwg5tphDuWZKq6e4ZsEamJALUIhwf2X1BiQgdJZZRLB4tmtSEMAvYzvzlYpNBF5IkmpcJdY1GJDzAqDxRpgg==", "recipe"=>{"title"=>"", "recipe_type"=>"", "cuisine"=>"", "difficulty"=>"", "cook_time"=>"", "ingredients"=>"", "cook_method"=>""}, "commit"=>"Enviar"}
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1163)
+Completed 200 OK in 76ms (Views: 35.6ms | ActiveRecord: 1.2ms | Allocations: 22468)
+
+
+Started GET "/recipes" for ::1 at 2021-04-27 14:29:14 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 28.6ms | Allocations: 6810)
+Completed 200 OK in 60ms (Views: 51.2ms | ActiveRecord: 3.2ms | Allocations: 20228)
+
+
+Started GET "/recipes" for ::1 at 2021-04-27 14:50:43 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 6412)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.2ms | Allocations: 19674)
+
+
+Started GET "/recipes" for ::1 at 2021-04-27 14:50:44 -0300
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 688)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.2ms | Allocations: 11875)
+
+
+Started GET "/recipes/1" for ::1 at 2021-04-27 14:50:46 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 292)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.4ms | Allocations: 12284)
+
+
+Started GET "/recipes/1/edit" for ::1 at 2021-04-27 14:50:48 -0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:25:in `edit'
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1312)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.2ms | Allocations: 13122)
+
+
+Started PATCH "/recipes/1" for ::1 at 2021-04-27 14:50:51 -0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HJBOu5+4+S3LYqomy0U3xXFBNO6FDzfwj6kirzLh0SpWivYLcXiVVtb6IVOKHOiNnEfyhBBxs59xgJqijJ43yA==", "recipe"=>{"title"=>"", "recipe_type"=>"sa", "cuisine"=>"", "difficulty"=>"asdas", "cook_time"=>"30", "ingredients"=>"saddsa", "cook_method"=>"sadasda"}, "commit"=>"Enviar", "id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:29:in `update'
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 921)
+Completed 200 OK in 35ms (Views: 25.5ms | ActiveRecord: 0.2ms | Allocations: 14292)
+
+
+Started GET "/recipes/1" for ::1 at 2021-04-27 14:50:56 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 81)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.3ms | Allocations: 11791)
+
+

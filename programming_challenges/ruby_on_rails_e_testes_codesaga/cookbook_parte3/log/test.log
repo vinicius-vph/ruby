@@ -1,0 +1,1517 @@
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-22 16:07:29 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 632)
+Completed 200 OK in 200ms (Views: 180.2ms | ActiveRecord: 0.2ms | Allocations: 290327)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-22 19:07:29.785562"], ["updated_at", "2021-04-22 19:07:29.785562"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-22 16:07:29 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 163)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 1323)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-22 19:07:29.801168"], ["updated_at", "2021-04-22 19:07:29.801168"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-22 19:07:29.803053"], ["updated_at", "2021-04-22 19:07:29.803053"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-22 16:07:29 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 150)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1309)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-22 16:14:45 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 528)
+Completed 200 OK in 144ms (Views: 139.3ms | ActiveRecord: 0.1ms | Allocations: 277702)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-22 19:14:45.659315"], ["updated_at", "2021-04-22 19:14:45.659315"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-22 16:14:45 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 163)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1323)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-22 19:14:45.669204"], ["updated_at", "2021-04-22 19:14:45.669204"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-22 19:14:45.670985"], ["updated_at", "2021-04-22 19:14:45.670985"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-22 16:14:45 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 150)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1309)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes"[0m
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "recipe_type" varchar, "cuisine" varchar, "difficulty" varchar, "cook_time" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "ingredientes" text, "como_preparar" text)[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (7.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210422192837)[0m
+  [1m[35m (8.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180829222434);
+
+[0m
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-04-22 19:29:57.459912"], ["updated_at", "2021-04-22 19:29:57.459912"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "11e9ab5fbf94befa05360b4efe6a31f4da427e4d"], ["created_at", "2021-04-22 19:29:57.470667"], ["updated_at", "2021-04-22 19:29:57.470667"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-22 16:29:57 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 532)
+Completed 200 OK in 147ms (Views: 141.9ms | ActiveRecord: 0.2ms | Allocations: 277706)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-22 19:29:57.702791"], ["updated_at", "2021-04-22 19:29:57.702791"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-22 16:29:57 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 163)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1323)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-22 19:29:57.714796"], ["updated_at", "2021-04-22 19:29:57.714796"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-22 19:29:57.716133"], ["updated_at", "2021-04-22 19:29:57.716133"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-22 16:29:57 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 150)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1309)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:08:22 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 560)
+Completed 200 OK in 176ms (Views: 168.2ms | ActiveRecord: 0.2ms | Allocations: 277734)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 17:08:23.059374"], ["updated_at", "2021-04-23 17:08:23.059374"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:08:23 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 163)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1323)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 17:08:23.070758"], ["updated_at", "2021-04-23 17:08:23.070758"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 17:08:23.071830"], ["updated_at", "2021-04-23 17:08:23.071830"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:08:23 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 150)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1309)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes"[0m
+  [1m[35m (15.8ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "recipe_type" varchar, "cuisine" varchar, "difficulty" varchar, "cook_time" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "ingredientes" text, "como_preparar" text)[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (9.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210422192837)[0m
+  [1m[35m (9.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180829222434);
+
+[0m
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-04-23 17:32:30.319742"], ["updated_at", "2021-04-23 17:32:30.319742"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "953f34e9060a42b50ed3d5129f602f0212cd4b4b"], ["created_at", "2021-04-23 17:32:30.331695"], ["updated_at", "2021-04-23 17:32:30.331695"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:32:30 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 532)
+Completed 200 OK in 141ms (Views: 137.1ms | ActiveRecord: 0.1ms | Allocations: 277705)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 17:32:30.554309"], ["updated_at", "2021-04-23 17:32:30.554309"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:32:30 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 163)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1323)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 17:32:30.564595"], ["updated_at", "2021-04-23 17:32:30.564595"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 17:32:30.566249"], ["updated_at", "2021-04-23 17:32:30.566249"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:32:30 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 150)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1309)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:33:21 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 532)
+Completed 200 OK in 164ms (Views: 159.3ms | ActiveRecord: 0.2ms | Allocations: 277706)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (1.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 17:33:21.223246"], ["updated_at", "2021-04-23 17:33:21.223246"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:33:21 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 343)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 1502)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 17:33:21.237629"], ["updated_at", "2021-04-23 17:33:21.237629"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 17:33:21.239410"], ["updated_at", "2021-04-23 17:33:21.239410"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:33:21 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 215)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1373)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:53:35 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 532)
+Completed 200 OK in 161ms (Views: 156.4ms | ActiveRecord: 0.1ms | Allocations: 277705)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 17:53:35.987116"], ["updated_at", "2021-04-23 17:53:35.987116"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:53:35 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 343)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 1502)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 17:53:35.999205"], ["updated_at", "2021-04-23 17:53:35.999205"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 17:53:36.000784"], ["updated_at", "2021-04-23 17:53:36.000784"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:53:36 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 215)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1373)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:54:04 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 532)
+Completed 200 OK in 148ms (Views: 142.5ms | ActiveRecord: 0.1ms | Allocations: 277705)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 17:54:05.021142"], ["updated_at", "2021-04-23 17:54:05.021142"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:54:05 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 343)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1502)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 17:54:05.031833"], ["updated_at", "2021-04-23 17:54:05.031833"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 17:54:05.033221"], ["updated_at", "2021-04-23 17:54:05.033221"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 14:54:05 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 215)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1373)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes"[0m
+  [1m[35m (13.5ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "recipe_type" varchar, "cuisine" varchar, "difficulty" varchar, "cook_time" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (21.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180829222434)[0m
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-04-23 18:00:59.481160"], ["updated_at", "2021-04-23 18:00:59.481160"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "30846247fe789398f2083ed44b7298f99368c619"], ["created_at", "2021-04-23 18:00:59.494275"], ["updated_at", "2021-04-23 18:00:59.494275"]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes"[0m
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "recipe_type" varchar, "cuisine" varchar, "difficulty" varchar, "cook_time" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "ingredients" text, "cook_method" text)[0m
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (10.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210422192837)[0m
+  [1m[35m (8.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180829222434);
+
+[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-04-23 18:04:23.891878"], ["updated_at", "2021-04-23 18:04:23.891878"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "a14926069572a6da31de9a1b4ba12d1c29a8504b"], ["created_at", "2021-04-23 18:04:23.903124"], ["updated_at", "2021-04-23 18:04:23.903124"]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:04:23.939782"], ["updated_at", "2021-04-23 18:04:23.939782"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:04:23 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 811)
+Completed 200 OK in 282ms (Views: 275.5ms | ActiveRecord: 0.2ms | Allocations: 277944)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 15:04:24 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:04:24.266491"], ["updated_at", "2021-04-23 18:04:24.266491"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:04:24 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 159)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1321)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 15:04:24 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:04:24 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:04:24.283284"], ["updated_at", "2021-04-23 18:04:24.283284"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:04:24 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 156)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1314)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:04:24.297192"], ["updated_at", "2021-04-23 18:04:24.297192"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:04:24.298681"], ["updated_at", "2021-04-23 18:04:24.298681"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:04:24 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 215)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1373)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:06:02.072335"], ["updated_at", "2021-04-23 18:06:02.072335"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:06:02 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 811)
+Completed 200 OK in 159ms (Views: 154.9ms | ActiveRecord: 0.2ms | Allocations: 277944)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 15:06:02 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:06:02.267336"], ["updated_at", "2021-04-23 18:06:02.267336"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:06:02 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 159)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1321)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 15:06:02 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:06:02 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 92)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:06:02.283807"], ["updated_at", "2021-04-23 18:06:02.283807"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:06:02 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 156)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1314)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:06:02.294067"], ["updated_at", "2021-04-23 18:06:02.294067"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:06:02.295414"], ["updated_at", "2021-04-23 18:06:02.295414"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:06:02 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 215)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1373)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:10:34.327178"], ["updated_at", "2021-04-23 18:10:34.327178"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:10:34 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 5012)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms | Allocations: 6914)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:10:34.387427"], ["updated_at", "2021-04-23 18:10:34.387427"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:10:34 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 4057)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 4332)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:10:34 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 93)
+Completed 200 OK in 142ms (Views: 141.4ms | ActiveRecord: 0.1ms | Allocations: 275640)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:10:34.545382"], ["updated_at", "2021-04-23 18:10:34.545382"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:10:34 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4037)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms | Allocations: 4309)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:10:34.560726"], ["updated_at", "2021-04-23 18:10:34.560726"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:10:34.562666"], ["updated_at", "2021-04-23 18:10:34.562666"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:10:34 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4247)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 4519)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:10:43.647776"], ["updated_at", "2021-04-23 18:10:43.647776"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:10:43 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 5012)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms | Allocations: 6914)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:10:43.707302"], ["updated_at", "2021-04-23 18:10:43.707302"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:10:43 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4057)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 4332)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:10:43 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 93)
+Completed 200 OK in 143ms (Views: 142.2ms | ActiveRecord: 0.1ms | Allocations: 275640)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:10:43.866420"], ["updated_at", "2021-04-23 18:10:43.866420"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:10:43 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4037)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 4309)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:10:43.878153"], ["updated_at", "2021-04-23 18:10:43.878153"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:10:43.879526"], ["updated_at", "2021-04-23 18:10:43.879526"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:10:43 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 4247)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 4519)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:11:25.222580"], ["updated_at", "2021-04-23 18:11:25.222580"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:11:25 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 5012)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms | Allocations: 6914)
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:11:25.284151"], ["updated_at", "2021-04-23 18:11:25.284151"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:11:25 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 4057)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms | Allocations: 4332)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:11:25 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 93)
+Completed 200 OK in 142ms (Views: 141.7ms | ActiveRecord: 0.1ms | Allocations: 275640)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:11:25.444408"], ["updated_at", "2021-04-23 18:11:25.444408"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:11:25 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 4037)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 4309)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:11:25.456031"], ["updated_at", "2021-04-23 18:11:25.456031"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:11:25.457555"], ["updated_at", "2021-04-23 18:11:25.457555"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:11:25 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 4247)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 4519)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:13:15.830847"], ["updated_at", "2021-04-23 18:13:15.830847"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:13:15 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 811)
+Completed 200 OK in 211ms (Views: 206.7ms | ActiveRecord: 0.1ms | Allocations: 277944)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 15:13:16 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:13:16.078629"], ["updated_at", "2021-04-23 18:13:16.078629"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:13:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 159)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1321)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 15:13:16 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:13:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:13:16.094610"], ["updated_at", "2021-04-23 18:13:16.094610"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:13:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 156)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1314)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:13:16.103734"], ["updated_at", "2021-04-23 18:13:16.103734"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:13:16.105773"], ["updated_at", "2021-04-23 18:13:16.105773"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:13:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 215)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1373)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:14:11.402120"], ["updated_at", "2021-04-23 18:14:11.402120"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:14:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 653)
+Completed 200 OK in 163ms (Views: 158.6ms | ActiveRecord: 0.1ms | Allocations: 277789)
+Started GET "/recipe" for 127.0.0.1 at 2021-04-23 15:14:11 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:14:11.602052"], ["updated_at", "2021-04-23 18:14:11.602052"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:14:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 137)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1299)
+Started GET "/recipe" for 127.0.0.1 at 2021-04-23 15:14:11 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:14:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:14:11.618045"], ["updated_at", "2021-04-23 18:14:11.618045"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:14:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 134)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1292)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:14:11.627565"], ["updated_at", "2021-04-23 18:14:11.627565"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:14:11.629161"], ["updated_at", "2021-04-23 18:14:11.629161"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:14:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 175)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1333)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:20:27.197338"], ["updated_at", "2021-04-23 18:20:27.197338"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:20:27 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1134)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms | Allocations: 3035)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:20:27.239241"], ["updated_at", "2021-04-23 18:20:27.239241"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:20:27 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 311)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms | Allocations: 586)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:20:27 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 93)
+Completed 200 OK in 146ms (Views: 145.9ms | ActiveRecord: 0.1ms | Allocations: 275635)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:20:27.395452"], ["updated_at", "2021-04-23 18:20:27.395452"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:20:27 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 308)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms | Allocations: 580)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:20:27.400787"], ["updated_at", "2021-04-23 18:20:27.400787"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:20:27.402237"], ["updated_at", "2021-04-23 18:20:27.402237"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:20:27 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 321)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 593)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.5ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:23:03.512741"], ["updated_at", "2021-04-23 18:23:03.512741"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:23:03 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1134)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 3035)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:23:03.554428"], ["updated_at", "2021-04-23 18:23:03.554428"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:23:03 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 311)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 586)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:23:03 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 93)
+Completed 200 OK in 145ms (Views: 144.2ms | ActiveRecord: 0.1ms | Allocations: 275635)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:23:03.711006"], ["updated_at", "2021-04-23 18:23:03.711006"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:23:03 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 308)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 580)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:23:03.717720"], ["updated_at", "2021-04-23 18:23:03.717720"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:23:03.719063"], ["updated_at", "2021-04-23 18:23:03.719063"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:23:03 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 321)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 593)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:23:44.511298"], ["updated_at", "2021-04-23 18:23:44.511298"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:23:44 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 728)
+Completed 200 OK in 158ms (Views: 153.7ms | ActiveRecord: 0.1ms | Allocations: 277861)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 15:23:44 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:23:44.706939"], ["updated_at", "2021-04-23 18:23:44.706939"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:23:44 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 153)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1315)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 15:23:44 -0300
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:23:44 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:23:44.727172"], ["updated_at", "2021-04-23 18:23:44.727172"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:23:44 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 150)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1308)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:23:44.738363"], ["updated_at", "2021-04-23 18:23:44.738363"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:23:44.740737"], ["updated_at", "2021-04-23 18:23:44.740737"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:23:44 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 203)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1361)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:24:18.527392"], ["updated_at", "2021-04-23 18:24:18.527392"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:24:18 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 729)
+Completed 200 OK in 156ms (Views: 152.2ms | ActiveRecord: 0.1ms | Allocations: 277862)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 15:24:18 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:24:18.719889"], ["updated_at", "2021-04-23 18:24:18.719889"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:24:18 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 153)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1315)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 15:24:18 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:24:18 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:24:18.735950"], ["updated_at", "2021-04-23 18:24:18.735950"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:24:18 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 150)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1308)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:24:18.745358"], ["updated_at", "2021-04-23 18:24:18.745358"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:24:18.746765"], ["updated_at", "2021-04-23 18:24:18.746765"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:24:18 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 203)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 1361)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:30:31.032082"], ["updated_at", "2021-04-23 18:30:31.032082"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:30:31 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 611)
+Completed 200 OK in 158ms (Views: 154.0ms | ActiveRecord: 0.1ms | Allocations: 277766)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:30:31.225536"], ["updated_at", "2021-04-23 18:30:31.225536"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:30:31 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 124)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1287)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:30:31 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:30:31.240388"], ["updated_at", "2021-04-23 18:30:31.240388"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:30:31 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 121)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1280)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:30:31.250204"], ["updated_at", "2021-04-23 18:30:31.250204"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:30:31.251550"], ["updated_at", "2021-04-23 18:30:31.251550"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:30:31 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 150)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1309)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:46:11.208196"], ["updated_at", "2021-04-23 18:46:11.208196"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:46:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 611)
+Completed 200 OK in 160ms (Views: 156.0ms | ActiveRecord: 0.1ms | Allocations: 277767)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:46:11.404577"], ["updated_at", "2021-04-23 18:46:11.404577"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:46:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 124)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1287)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:46:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:46:11.419800"], ["updated_at", "2021-04-23 18:46:11.419800"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:46:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 121)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1280)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:46:11.429206"], ["updated_at", "2021-04-23 18:46:11.429206"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:46:11.431018"], ["updated_at", "2021-04-23 18:46:11.431018"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:46:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 150)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1309)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:58:36.495656"], ["updated_at", "2021-04-23 18:58:36.495656"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:58:36 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 611)
+Completed 200 OK in 160ms (Views: 156.2ms | ActiveRecord: 0.1ms | Allocations: 277766)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:58:36.691932"], ["updated_at", "2021-04-23 18:58:36.691932"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:58:36 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 124)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1287)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:58:36 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:58:36.707069"], ["updated_at", "2021-04-23 18:58:36.707069"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:58:36 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 121)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1280)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 18:58:36.717086"], ["updated_at", "2021-04-23 18:58:36.717086"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 18:58:36.718615"], ["updated_at", "2021-04-23 18:58:36.718615"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 15:58:36 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 150)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1309)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:01:00.679285"], ["updated_at", "2021-04-23 19:01:00.679285"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:01:00 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 811)
+Completed 200 OK in 215ms (Views: 211.2ms | ActiveRecord: 0.1ms | Allocations: 277944)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 16:01:00 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 214)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 2295)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:01:00.949469"], ["updated_at", "2021-04-23 19:01:00.949469"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:01:00 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 159)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1321)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 16:01:00 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 28)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1277)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:01:00 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:01:00.969408"], ["updated_at", "2021-04-23 19:01:00.969408"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:01:00 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 156)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1314)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:01:00.978817"], ["updated_at", "2021-04-23 19:01:00.978817"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 19:01:00.980290"], ["updated_at", "2021-04-23 19:01:00.980290"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:01:00 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 215)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1373)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:03:19.255342"], ["updated_at", "2021-04-23 19:03:19.255342"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:03:19 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 811)
+Completed 200 OK in 158ms (Views: 153.5ms | ActiveRecord: 0.1ms | Allocations: 277944)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 16:03:19 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 270)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 2347)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:03:19.468179"], ["updated_at", "2021-04-23 19:03:19.468179"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:03:19 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 159)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1321)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 16:03:19 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1300)
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:03:19 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 158)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1316)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:03:19 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 92)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:03:19.493942"], ["updated_at", "2021-04-23 19:03:19.493942"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:03:19 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 156)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1314)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:03:19.504418"], ["updated_at", "2021-04-23 19:03:19.504418"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 19:03:19.506063"], ["updated_at", "2021-04-23 19:03:19.506063"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:03:19 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 215)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1373)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:05:16.326144"], ["updated_at", "2021-04-23 19:05:16.326144"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:05:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 811)
+Completed 200 OK in 215ms (Views: 210.4ms | ActiveRecord: 0.1ms | Allocations: 277944)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 16:05:16 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 270)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 2347)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at", "ingredients", "cook_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:05:16.597543"], ["updated_at", "2021-04-23 19:05:16.597543"], ["ingredients", "Farinha, açucar, cenoura"], ["cook_method", "Cozinhe a cenoura, corte em pedaços pequenos, misture com o restante dos ingredientes"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:05:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 159)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1321)
+Started GET "/recipes/1" for 127.0.0.1 at 2021-04-23 16:05:16 -0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1300)
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:05:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 158)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1316)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:05:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1251)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:05:16.620488"], ["updated_at", "2021-04-23 19:05:16.620488"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:05:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 156)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1314)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Bolo de cenoura"], ["recipe_type", "Sobremesa"], ["cuisine", "Brasileira"], ["difficulty", "Médio"], ["cook_time", 60], ["created_at", "2021-04-23 19:05:16.630622"], ["updated_at", "2021-04-23 19:05:16.630622"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "recipe_type", "cuisine", "difficulty", "cook_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Feijoada"], ["recipe_type", "Prato Principal"], ["cuisine", "Brasileira"], ["difficulty", "Difícil"], ["cook_time", 90], ["created_at", "2021-04-23 19:05:16.632489"], ["updated_at", "2021-04-23 19:05:16.632489"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2021-04-23 16:05:16 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 215)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1373)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
